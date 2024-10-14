@@ -23,24 +23,25 @@ class _FooterPageState extends State<FooterPage> {
           SizedBox(height: 30.0,),
           SizedBox(
             width: 600,
-            child: Text(str,style: TextStyle(color: Colors.white54,fontSize: 20.0),textAlign: TextAlign.center,)),
-           SizedBox(height: 60.0,),
+            child: Text(str,style: TextStyle(color: Colors.white54,fontSize: 20.0),textAlign: TextAlign.center,)
+          ),
+         SizedBox(height: 60.0,),
          SizedBox(
-                      height: 65,
-                      width: 200,
-                      child: FlatButton(
-                        color: Color(0xff0A192F),
-                        onPressed: () {
-                                method.launchURL(
-                                    "https://www.linkedin.com/in/akshay-jadhav-90ba81134/");
-                         },
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6.0),
-                            side: BorderSide(color: Color(0xff48E1EC))
-                          ),
-                        child:Text("Get In Touch",style:TextStyle(color: Color(0xff48E1EC),fontWeight: FontWeight.bold,fontSize: 20.0),),
-                    ),
-           ),
+            height: 65,
+            width: 200,
+            child: TextButton(
+              //color: Color(0xff0A192F),
+              onPressed: () {
+                      method.launchURL(
+                          "https://www.linkedin.com/in/akshay-jadhav-90ba81134/");
+               },
+              // shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.circular(6.0),
+              //     side: BorderSide(color: Color(0xff48E1EC))
+              //   ),
+              child:Text("Get In Touch",style:TextStyle(color: Color(0xff48E1EC),fontWeight: FontWeight.bold,fontSize: 20.0),),
+          ),
+         ),
          ],
        ),
     );
